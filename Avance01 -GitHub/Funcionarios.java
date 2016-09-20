@@ -13,7 +13,7 @@ public class Funcionarios {
         this.nombre_usuario = nombre_usuario;
         this.contraseña = contraseña;
     }
-
+    
     public String getNombre_funcionario() {
         return nombre_funcionario;
     }
@@ -21,7 +21,9 @@ public class Funcionarios {
     public void setNombre_funcionario(String nombre_funcionario) {
         this.nombre_funcionario = nombre_funcionario;
     }
-
+    public boolean ValidarNombres(String nombre){
+        
+    }
     public String getEmpresa_que_pertenece() {
         return empresa_que_pertenece;
     }
