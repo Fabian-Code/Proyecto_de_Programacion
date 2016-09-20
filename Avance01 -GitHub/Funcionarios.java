@@ -22,21 +22,23 @@ public class Funcionarios {
         this.nombre_funcionario = nombre_funcionario;
     }
     public boolean ValidarNombres(String nombre){
-        
+        Pattern pat = Pattern.compile("[A-Za-z]+");
+        Matcher mac = pat.macher(nombre);
+        return (mac.matches());
     }
-    public String getEmpresa_que_pertenece() {
+    public String getEmpresaQuePertenece() {
         return empresa_que_pertenece;
     }
 
-    public void setEmpresa_que_pertenece(String empresa_que_pertenece) {
+    public void setEmpresaQuePertenece(String empresa_que_pertenece) {
         this.empresa_que_pertenece = empresa_que_pertenece;
     }
 
-    public String getNombre_usuario() {
+    public String getNombreUsuario() {
         return nombre_usuario;
     }
 
-    public void setNombre_usuario(String nombre_usuario) {
+    public void setNombreUsuario(String nombre_usuario) {
         this.nombre_usuario = nombre_usuario;
     }
 
