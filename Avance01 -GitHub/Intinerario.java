@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package checksbus;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -37,7 +33,7 @@ public class Intinerario {
     }
     public boolean ValidarNombres(String nombre){
         Pattern pat = Pattern.compile("[A-Za-z]+");
-         Matcher mac = pat.Matcher(hora);
+         Matcher mac = pat.matcher(hora);
         return (mac.matches());
     }
     public String getEstadoBus() {
@@ -57,7 +53,8 @@ public class Intinerario {
     }
     public boolean ValidarFecha(String fecha){
         Pattern pat = Pattern.compile("[\\d]{1,2}[-|/]{1}[\\d]{1,2}");
-        Matcher mac = pat.Matcher();
+        Matcher mac = pat.matcher(fecha);
+        return (mac.matches());
     }
     public String getHoraLlegadaBus() {
         return horaLlegadaBus;
@@ -76,7 +73,7 @@ public class Intinerario {
     }
     public boolean ValidarHora(String hora){
         Pattern pat = Pattern.compile("[\\d]{2,2}:[\\d]{2,2}");
-        Matcher mac = pat.Matcher(hora);
+        Matcher mac = pat.matcher(hora);
         return (mac.matches());
     } 
     public String getEmpresa() {
