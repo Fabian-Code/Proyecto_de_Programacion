@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package checksbus;
-
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 /**
  *
  * @author Gustavo Huerta
@@ -62,7 +63,11 @@ public class Intinerario {
     public void setHora_salida_bus(String hora_salida_bus) {
         this.hora_salida_bus = hora_salida_bus;
     }
-
+    public boolean ValidarHora(String hora){
+        Pattern pat = Pattern.compile("[\\d]{2,2}:[\\d]{2,2}");
+        Matcher mac = pat.Matcher(hora);
+        return (mac.matches());
+    } 
     public String getEmpresa() {
         return empresa;
     }
