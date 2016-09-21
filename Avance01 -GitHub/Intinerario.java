@@ -29,7 +29,9 @@ public class Intinerario {
         this.destino = destino;
         this.estado_bus = estado_bus;
     }
-
+    public boolean ValidarNombres(String nombre){
+        Pattern pat = Pattern.compile("[A-Za-z]+"); 
+    }
     public String getEstado_bus() {
         return estado_bus;
     }
