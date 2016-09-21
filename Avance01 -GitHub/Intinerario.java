@@ -12,36 +12,42 @@ import java.util.regex.Matcher;
  */
 public class Intinerario {
     private String fecha;
-    private String hora_llegada_bus;
-    private String hora_salida_bus;
+    private String horaLlegadaBus;
+    private String horaSalidaBus;
     private String empresa;
     private String destino;
-    private String estado_bus;
+    private String estadoBus;
 
     public Intinerario() {
+        this.fecha = "";
+        this.horaLlegadaBus = "";
+        this.horaSalidaBus = "";
+        this.empresa = "";
+        this.destino = "";
+        this.estadoBus = "";
     }
 
-    public Intinerario(String fecha, String hora_llegada_bus, String hora_salida_bus, String empresa, String destino, String estado_bus) {
+    public Intinerario(String fecha, String horaLlegadaBus, String horaSalidaBus, String empresa, String destino, String estadoBus) {
         this.fecha = fecha;
-        this.hora_llegada_bus = hora_llegada_bus;
-        this.hora_salida_bus = hora_salida_bus;
+        this.horaLlegadaBus = horaLlegadaBus;
+        this.horaSalidaBus = horaSalidaBus;
         this.empresa = empresa;
         this.destino = destino;
-        this.estado_bus = estado_bus;
+        this.estadoBus = estadoBus;
     }
     public boolean ValidarNombres(String nombre){
-        Pattern pat = Pattern.compile("[A-Za-z]+"); 
+        Pattern pat = Pattern.compile("[A-Za-z]+");
+         Matcher mac = pat.Matcher(hora);
+        return (mac.matches());
     }
-    public String getEstado_bus() {
-        return estado_bus;
-    }
-
-    public void setEstado_bus(String estado_bus) {
-        this.estado_bus = estado_bus;
+    public String getEstadoBus() {
+        return estadoBus;
     }
 
+    public void setEstadoBus(String estadoBus) {
+        this.estadoBus = estadoBus;
+    }
     
-
     public String getFecha() {
         return fecha;
     }
@@ -49,21 +55,24 @@ public class Intinerario {
     public void setFecha(String fecha) {
         this.fecha = fecha;
     }
-
-    public String getHora_llegada_bus() {
-        return hora_llegada_bus;
+    public boolean ValidarFecha(String fecha){
+        Pattern pat = Pattern.compile("[\\d]{1,2}[-|/]{1}[\\d]{1,2}");
+        Matcher mac = pat.Matcher();
+    }
+    public String getHoraLlegadaBus() {
+        return horaLlegadaBus;
     }
 
-    public void setHora_llegada_bus(String hora_llegada_bus) {
-        this.hora_llegada_bus = hora_llegada_bus;
+    public void setHoraLlegadaBus(String horaLlegadaBus) {
+        this.horaLlegadaBus = horaLlegadaBus;
     }
 
-    public String getHora_salida_bus() {
-        return hora_salida_bus;
+    public String getHoraSalidaBus() {
+        return horaSalidaBus;
     }
 
-    public void setHora_salida_bus(String hora_salida_bus) {
-        this.hora_salida_bus = hora_salida_bus;
+    public void setHoraSalidaBus(String hora_salida_bus) {
+        this.horaSalidaBus = horaSalidaBus;
     }
     public boolean ValidarHora(String hora){
         Pattern pat = Pattern.compile("[\\d]{2,2}:[\\d]{2,2}");
