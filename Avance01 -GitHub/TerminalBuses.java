@@ -4,14 +4,18 @@ import java.util.ArrayList;
 
 public class TerminalBuses  {
     
-    private String nombre_terminal;
+    private String nombreterminal;
     private String regiondelterminal;
     private String direccion;
     private ArrayList<Intinerario> itenirario;
     private ArrayList<Funcionarios> funcionarios;
-
-    public TerminalBuses(String nombre_terminal, String regiondelterminal, String direccion) {
-        this.nombre_terminal = nombre_terminal;
+    public TerminalBuses(){
+        this.nombreterminal = "";
+        this.regiondelterminal = "";
+        this.direccion = "";
+    }
+    public TerminalBuses(String nombreterminal, String regiondelterminal, String direccion) {
+        this.nombreterminal = nombreterminal;
         this.regiondelterminal = regiondelterminal;
         this.direccion = direccion;
          itinerario=new ArrayList<Itinerario>();
