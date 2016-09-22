@@ -1,4 +1,6 @@
-
+/* Este programa protipo va a estar orientado a los funcionario unicamente , donde ingresa los datos de la clase funcionario 
+y los datos de su terminal(el cual va estar validado su existencia en la Clase TerminalesChile), donde va agregar itinirario 
+asociado a su terminal , modifcar itinirarios e iliminar itinirario  */
 package checksbus;
 import java.util.Scanner;
 
