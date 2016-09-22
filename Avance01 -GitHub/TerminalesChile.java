@@ -1,12 +1,9 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+Esta clase orientada a guarda numero finito de terminales , y sirve para validar que el terminal que ingrese exista dentro de la lista
  */
 package checksbus;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 /**
  *
  * @author Fabian
@@ -19,7 +16,8 @@ public class TerminalesChile {
     
     
     private void añadirTerminales(){
-	TerminalBuses terminal = new TerminalBuses();
+	TerminalBuses terminal = new TerminalBuses("Terminal Rodoviario", "Arica" , "Av. Diego Portales 948");
+	TerminalBuses terminal1 = new Terminales
     }
     public TerminalBuses BuscarTerminal(){
     	
