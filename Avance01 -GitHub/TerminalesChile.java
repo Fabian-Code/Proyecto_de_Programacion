@@ -12,12 +12,17 @@ import java.util.Scanner;
  * @author Fabian
  */
 public class TerminalesChile {
-    private final ArrayList <TerminalBuses> terminales = new ArrayList <TerminalBuses>() ;
-    static Scanner leer = new Scanner(System.in);
+    private final ArrayList <TerminalBuses> terminales ;
+   public TerminalesChile(){
+   	terminales = new ArrayList<>();
+   }
     
     
-    public static void añadirTerminal(){
+    private void añadirTerminales(){
 	TerminalBuses terminal = new TerminalBuses();
+    }
+    public TerminalBuses BuscarTerminal(){
+    	
     }
 
 }
