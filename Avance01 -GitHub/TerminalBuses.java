@@ -8,11 +8,14 @@ public class TerminalBuses  {
     private String regiondelterminal;
     private String direccion;
     private ArrayList<Intinerario> itenirario;
+    private ArrayList<Funcionarios> funcionarios;
 
     public TerminalBuses(String nombre_terminal, String regiondelterminal, String direccion) {
         this.nombre_terminal = nombre_terminal;
         this.regiondelterminal = regiondelterminal;
         this.direccion = direccion;
+         itinerario=new ArrayList<Itinerario>();
+ +       funcionarios = new ArrayList<Funcionarios>();
     }
 
     
