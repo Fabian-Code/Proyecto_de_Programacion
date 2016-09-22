@@ -31,7 +31,7 @@ public class Intinerario {
         this.destino = destino;
         this.estadoBus = estadoBus;
     }
-    public boolean ValidarNombres(String nombre){
+    public boolean ValidarString (String nombre){
         Pattern pat = Pattern.compile("[A-Za-z]+");
          Matcher mac = pat.matcher(hora);
         return (mac.matches());
